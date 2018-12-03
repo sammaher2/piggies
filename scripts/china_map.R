@@ -84,7 +84,7 @@ plot(chinesepigs2, main = "",
       #legend = FALSE,
     # addfun = plot(chinesepigs, add = TRUE, legend = TRUE, col = inf)
      )
-
+#check
 inf2 <- inferno(50, 1, begin = 0, end = 1, direction = 1)
 plot(pigs2, main = "",
      yaxt = "n",
