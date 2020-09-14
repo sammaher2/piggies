@@ -78,15 +78,22 @@ plot(chinesepigs2, main = "",
      xaxt = "n",
      bty = "n",
      #breaks = zClass$brks,
-     col = inf,
-     border = NA,
+     col = meow,
+     #border = NA,
      box = FALSE
-      #legend = FALSE,
+    #legend = FALSE,
     # addfun = plot(chinesepigs, add = TRUE, legend = TRUE, col = inf)
      )
 
+
+legend1<- as.raster(matrix(inf, ncol=1))
+plot(c(0,2),c(0,1),type = 'n', axes = F,xlab = '', ylab = '', main = 'legend title')
+text(x=1.5, y = seq(0,1,l=5), labels = seq(0,1,l=5))
+rasterImage(legend_image, 0, 0, 1,1)
+
+
 inf2 <- inferno(50, 1, begin = 0, end = 1, direction = 1)
-plot(pigs2, main = "",
+plot(pigs, main = "",
      yaxt = "n",
      xaxt = "n",
      bty = "n",
